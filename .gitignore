@@ -27,3 +27,5 @@ ENV/
 
 # sqlite
 *.db
+
+tmp

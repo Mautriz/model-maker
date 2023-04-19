@@ -5,6 +5,8 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from model_maker.database.base import get_session
 from model_maker.database.user import User
 
+from .routers.datasets import router as datasets_router
+
 app = FastAPI()
 
 
@@ -27,6 +29,9 @@ class CreateUserResponse(BaseModel):
     id: str
     username: str
     email: str
+
+
+app.include_router(datasets_router, tags=["datasets"])
 
 
 @app.post("/users")
