@@ -1,0 +1,28 @@
+# Python
+*egg-info
+__pycache__
+
+# IDE
+.idea
+**/.DS_Store
+.vscode/
+
+# Envs
+.venv/
+venv/
+ENV/
+
+# Environment variables
+.env
+
+# Poetry
+/dist
+.python-version
+
+# Checks
+.pytest_cache
+.mypy_cache
+.ruff_cache
+
+# sqlite
+*.db
