@@ -1,6 +1,6 @@
 from fastapi.testclient import TestClient
 
-from pystarter.server import app
+from model_maker.server import app
 
 client = TestClient(app)
 

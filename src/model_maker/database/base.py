@@ -16,7 +16,7 @@ from sqlalchemy.orm import (
     mapped_column,
 )
 
-from pystarter.config import get_config
+from model_maker.config import get_config
 
 
 def get_engine() -> AsyncEngine:

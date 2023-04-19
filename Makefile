@@ -8,7 +8,7 @@ migrate-and-run: upgrade-db run ## Run the application and migrate the database
 
 .PHONY: run
 run: ## Run the application
-	poetry run python -m pystarter
+	poetry run python -m model_maker
 
 .PHONY: check
 check: format-check lint type-check test ## Launch all the checks (formatting, linting, type checking)

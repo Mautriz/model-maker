@@ -24,6 +24,5 @@ It includes:
   work synchronously)
 - Adapt sqlalchemy models to your need
 - Delete current migrations under `migrations/versions/`
-- `make generate-migration name=${migration name}`
 - `make install`
 - `make migrate-and-run`

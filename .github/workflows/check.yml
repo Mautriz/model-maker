@@ -5,33 +5,32 @@ name: Python application
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
-    
+    branches: ["main"]
+
 env:
-  database_url: sqlite+aiosqlite:///pystarter.db
-  
+  database_url: sqlite+aiosqlite:///model_maker.db
+
 permissions:
   contents: read
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v3
-      with:
-        python-version: "3.10"
-    - name: Install dependencies
-      run: | 
-        pip install poetry
-        make install
-    - run: make format-check 
-    - run: make lint 
-    - run: make type-check
-    - run: make upgrade-db
-    - run: make test
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - name: Install dependencies
+        run: |
+          pip install poetry
+          make install
+      - run: make format-check
+      - run: make lint
+      - run: make type-check
+      - run: make upgrade-db
+      - run: make test

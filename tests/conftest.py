@@ -3,7 +3,7 @@ from typing import AsyncIterator
 import pytest_asyncio
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from pystarter.database.base import session_maker
+from model_maker.database.base import session_maker
 
 
 @pytest_asyncio.fixture()

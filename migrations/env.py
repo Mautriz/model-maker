@@ -1,13 +1,13 @@
 from logging.config import fileConfig
 import re
-from pystarter.database import Base
+from model_maker.database import Base
 
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
 
 from alembic import context
 
-from pystarter.config import get_config
+from model_maker.config import get_config
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

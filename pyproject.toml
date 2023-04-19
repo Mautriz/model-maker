@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pystarter"
+name = "model-maker"
 version = "0.1.0"
 description = ""
 authors = ["Mauro Insacco <mauro.insacco@gmail.com>"]

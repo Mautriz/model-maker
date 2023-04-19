@@ -2,7 +2,7 @@ import pytest
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from pystarter.database.user import Profile, User
+from model_maker.database.user import Profile, User
 
 
 @pytest.mark.asyncio

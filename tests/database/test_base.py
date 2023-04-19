@@ -3,7 +3,7 @@ from datetime import datetime
 import pytest
 from sqlalchemy.orm import MappedAsDataclass
 
-from pystarter.database.base import Base, GenericMixin
+from model_maker.database.base import Base, GenericMixin
 
 
 @pytest.mark.asyncio

@@ -2,8 +2,8 @@ from fastapi import Depends, FastAPI
 from pydantic import BaseModel
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from pystarter.database.base import get_session
-from pystarter.database.user import User
+from model_maker.database.base import get_session
+from model_maker.database.user import User
 
 app = FastAPI()
 
